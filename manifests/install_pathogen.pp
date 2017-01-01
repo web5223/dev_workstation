@@ -1,5 +1,5 @@
 # documentation goes here
-class puppet_workstation::install_pathogen {
+class dev_workstation::install_pathogen {
   
   exec { 'setup pathogen vim bundle manager':
     command => 'mkdir -p .vim/autoload .vim/bundle && \

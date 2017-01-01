@@ -1,5 +1,5 @@
 # documentation goes here
-class puppet_workstation::set_user {
+class dev_workstation::set_user {
   
   group { 'web':
     ensure => 'present',

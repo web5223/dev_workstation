@@ -1,7 +1,7 @@
-class puppet_workstation {
+class dev_workstation {
 
-  include puppet_workstation::set_user
-  include puppet_workstation::install_pathogen
-  # include puppet_workstation::vim_setup
+  include dev_workstation::set_user
+  include dev_workstation::install_pathogen
+  # include dev_workstation::vim_setup
 
 }
