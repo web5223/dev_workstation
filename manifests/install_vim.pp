@@ -6,7 +6,12 @@ class dev_workstation::install_vim {
 
   #install vim packages
   package { $vim_packages:
-    ensure => 'installed',
+    ensure => installed,
   } 
+
+  file { '/home/wpaton/.vimrc':
+    ensure => file,
+    source => 'puppet:///modules/dev_workstation/.vimrc',
+  }
 
 }
