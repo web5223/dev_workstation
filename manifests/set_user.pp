@@ -9,7 +9,7 @@ class dev_workstation::set_user {
     gid    => '802',
   } 
 
-  user { "$(currentuser)":
+  user { $currentuser:
     ensure           => 'present',
     gid              => '802',
     home             => "/home/$(currentuser)",
