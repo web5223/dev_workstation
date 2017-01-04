@@ -23,11 +23,11 @@ class dev_workstation::install_vim {
     path    => [ '/bin/', '/sbin/' , '/usr/bin/', '/usr/sbin/' ]
   } 
 
-  vcsrepo { '/home/${currentuser}/.vim/bundle':
-    ensure   => present,
-    provider => git,
-    source   => 'git://github.com/voxpupuli/vim-puppet.git',
-    require  => File['/etc/puppetlabs/code/environments/production/modules/vcsrepo'],
-  }
+#  vcsrepo { '/home/${currentuser}/.vim/bundle':
+#    ensure   => present,
+#    provider => git,
+#    source   => 'git://github.com/voxpupuli/vim-puppet.git',
+#    require  => File['/etc/puppetlabs/code/environments/production/modules/vcsrepo'],
+#  }
 
 }
