@@ -16,4 +16,11 @@ class dev_workstation::install_vim {
     source => 'puppet:///modules/dev_workstation/.vimrc',
   }
 
+  exec { 'install puppet labs vcsrepo type':
+    command => 'puppet module install puppetlabs-vcsrepo --version 1.5.0',
+    cwd     => '/',
+    user    => 'root',
+    path    => [ '/bin/', '/sbin/' , '/usr/bin/', '/usr/sbin/' ]
+  } 
+
 }
